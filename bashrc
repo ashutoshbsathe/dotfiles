@@ -101,4 +101,9 @@ source $OSH/oh-my-bash.sh
 # alias ohmybash="mate ~/.oh-my-bash"
 clear
 neofetch
+alias nclear="clear; neofetch"
+mcd () {
+    mkdir -p $1
+    cd $1
+}
 
