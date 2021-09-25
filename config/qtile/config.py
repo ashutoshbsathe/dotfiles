@@ -38,6 +38,8 @@ mod = "mod1"
 # terminal = guess_terminal()
 my_term = "alacritty"
 my_browsers = ["firefox", "google-chrome-stable -incognito"]
+# Could send a notification with `notify-send`
+screenshot_cmd = 'scrot -d3 /home/ashutosh/Pictures/screenshots/%Y-%m-%d_%H:%M:%S.jpg'
 
 keys = [
     # Switch between windows
@@ -92,6 +94,7 @@ keys = [
     Key([mod], "r", lazy.spawn("dmenu_run -p 'dmenu >'"), desc="Run launcher"),
     Key([mod], "w", lazy.spawn(my_browsers[0]), desc="Normal browser"),
     Key([mod, "shift"], "w", lazy.spawn(my_browsers[1]), desc="Incognito browser"),
+    Key([mod, "shift"], "p", lazy.spawn(screenshot_cmd), desc='Take a screenshot'),
 ]
 
 groups = [Group(i) for i in "123456789"]
