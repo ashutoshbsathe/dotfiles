@@ -158,6 +158,12 @@ screens = [
                     background=my_green,
                 ),
                 widget.Net(format='{up}', background=my_green),
+                widget.Image(
+                    filename='~/.config/qtile/icons/arrow-down.png',
+                    margin=5,
+                    padding=0,
+                    background=my_green,
+                ),
                 widget.Net(format='{down} ', background=my_green),
                 widget.Image(
                     filename='~/.config/qtile/icons/cpu.png',
