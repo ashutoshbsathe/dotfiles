@@ -39,7 +39,7 @@ mod = "mod1"
 my_term = "alacritty"
 my_browsers = ["firefox", "google-chrome-stable -incognito"]
 # Could send a notification with `notify-send`
-screenshot_cmd = 'scrot -d3 /home/ashutosh/Pictures/screenshots/%Y-%m-%d_%H:%M:%S.jpg'
+screenshot_cmd = 'scrot -q 100 /home/ashutosh/Pictures/screenshots/%Y-%m-%d_%H:%M:%S.jpg'
 
 keys = [
     # Switch between windows
@@ -95,6 +95,7 @@ keys = [
     Key([mod], "w", lazy.spawn(my_browsers[0]), desc="Normal browser"),
     Key([mod, "shift"], "w", lazy.spawn(my_browsers[1]), desc="Incognito browser"),
     Key([mod, "shift"], "p", lazy.spawn(screenshot_cmd), desc='Take a screenshot'),
+
 ]
 
 groups = [Group(i) for i in "123456789"]
@@ -120,8 +121,8 @@ layouts = [
     # layout.Stack(num_stacks=2),
     # layout.Bsp(),
     # layout.Matrix(),
-    layout.MonadTall(),
-    layout.MonadWide(),
+    layout.MonadTall(margin=4),
+    layout.MonadWide(margin=4),
     layout.Max(),
     layout.Floating(),
     # layout.Tile(),
@@ -131,13 +132,20 @@ layouts = [
 ]
 
 widget_defaults = dict(
-    font='Nimbus Sans, sans',
+    # font='Nimbus Sans, sans',
+    font='FiraCode Sans Mono',
     fontsize=14,
     padding=3
 )
 my_green = '#094507'
 my_blue = '#202734'
 extension_defaults = widget_defaults.copy()
+
+powerline_left_sep = ''
+powerline_right_sep = ''
+powerline_fontsize = 25
+powerline_font = 'FiraCode Sans Mono'
+powerline_padding = 0
 
 screens = [
     Screen(
@@ -154,6 +162,13 @@ screens = [
                 widget.Prompt(),
                 widget.WindowName(),
                 widget.Spacer(),
+                widget.TextBox(
+                    text=powerline_left_sep,
+                    font=powerline_font,
+                    fontsize=powerline_fontsize,
+                    foreground=my_green,
+                    padding=powerline_padding
+                ),
                 widget.Image(
                     filename='~/.config/qtile/icons/arrow-up.png',
                     margin=5,
@@ -167,31 +182,71 @@ screens = [
                     padding=0,
                     background=my_green,
                 ),
-                widget.Net(format='{down} ', background=my_green),
+                widget.Net(format='{down}  ', background=my_green),
+                widget.TextBox(
+                    text=powerline_left_sep,
+                    font=powerline_font,
+                    fontsize=powerline_fontsize,
+                    foreground=my_blue,
+                    background=my_green,
+                    padding=powerline_padding
+                ),
                 widget.Image(
                     filename='~/.config/qtile/icons/cpu.png',
                     margin=5,
                     background=my_blue 
                 ),
-                widget.CPU(format='{load_percent}% ', background=my_blue),
+                widget.CPU(format='{load_percent}%  ', background=my_blue),
+                widget.TextBox(
+                    text=powerline_left_sep,
+                    font=powerline_font,
+                    fontsize=powerline_fontsize,
+                    foreground=my_green,
+                    background=my_blue,
+                    padding=powerline_padding
+                ),
                 widget.Image(
                     filename='~/.config/qtile/icons/pie-chart.png',
                     margin=5,
                     background=my_green
                 ),
-                widget.Memory(format='{MemUsed: .0f}{mm} ', background=my_green),
+                widget.Memory(format='{MemUsed: .0f}{mm}  ', background=my_green),
+                widget.TextBox(
+                    text=powerline_left_sep,
+                    font=powerline_font,
+                    fontsize=powerline_fontsize,
+                    foreground=my_blue,
+                    background=my_green,
+                    padding=powerline_padding 
+                ),
                 widget.Image(
                     filename='~/.config/qtile/icons/nvidia-10.png',
                     margin=3,
                     background=my_blue,
                 ),
-                widget.NvidiaSensors(format='{temp}°C/{fan_speed}RPM/{perf} ', background=my_blue),
+                widget.NvidiaSensors(format='{temp}°C/{fan_speed}RPM/{perf}  ', background=my_blue),
+                widget.TextBox(
+                    text=powerline_left_sep,
+                    font=powerline_font,
+                    fontsize=powerline_fontsize,
+                    foreground=my_green,
+                    background=my_blue,
+                    padding=powerline_padding
+                ),
                 widget.Image(
                     filename='~/.config/qtile/icons/calendar.png',
                     margin=5,
                     background=my_green
                 ),
-                widget.Clock(format='%Y %b %d %a %I:%M %p ', background=my_green),
+                widget.Clock(format='%Y %b %d %a %I:%M %p  ', background=my_green),
+                widget.TextBox(
+                    text=powerline_left_sep,
+                    font=powerline_font,
+                    fontsize=powerline_fontsize,
+                    foreground=my_blue,
+                    background=my_green,
+                    padding=powerline_padding
+                ),
                 widget.Systray(
                     background=my_blue
                 ),
