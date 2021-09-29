@@ -115,16 +115,19 @@ for i in groups:
         #     desc="move focused window to group {}".format(i.name)),
     ])
 
+my_green = '#094507'
+my_blue = '#202734'
+
 layouts = [
     # layout.Columns(border_focus_stack=['#d75f5f', '#8f3d3d'], border_width=4),
     # Try more layouts by unleashing below layouts.
     # layout.Stack(num_stacks=2),
     # layout.Bsp(),
     # layout.Matrix(),
-    layout.MonadTall(margin=4),
-    layout.MonadWide(margin=4),
-    layout.Max(),
-    layout.Floating(),
+    layout.MonadTall(border_focus=my_green, margin=4),
+    layout.MonadWide(border_focus=my_green, margin=4),
+    layout.Max(border_focus=my_green),
+    layout.Floating(border_focus=my_green),
     # layout.Tile(),
     # layout.TreeTab(),
     # layout.VerticalTile(),
@@ -137,8 +140,6 @@ widget_defaults = dict(
     fontsize=14,
     padding=3
 )
-my_green = '#094507'
-my_blue = '#202734'
 extension_defaults = widget_defaults.copy()
 
 powerline_left_sep = ''
