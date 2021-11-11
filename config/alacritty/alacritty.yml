@@ -29,4 +29,7 @@ colors:
     magenta: '#FFEE99'
     cyan: '#95E6CB'
     white: '#FFFFFF'
-
+# Key bindings and stuff
+# Get `xcwd` from https://github.com/schischi/xcwd
+key_bindings:
+  - {key: Return, mods: Control|Shift, command:{program: "bash", args:["-c", "~/.config/alacritty/samedirterm.sh"]}}
