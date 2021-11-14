@@ -49,6 +49,12 @@ keys = [
     Key([mod], "k", lazy.layout.up(), desc="Move focus up"),
     Key([mod], "space", lazy.layout.next(),
         desc="Move window focus to other window"),
+    # https://github.com/qtile/qtile/issues/794
+    Key([mod, "shift"], "space", lazy.group.next_window(),
+        desc="Move window focus to next window in the group"),
+    # This is my hacky way to bring the window to front
+    Key([mod, "shift"], "f", lazy.window.bring_to_front(),
+        desc="Move window focus to next window in the group"),
 
     # Move windows between left/right columns or move up/down in current stack.
     # Moving out of range in Columns layout will create new column.
