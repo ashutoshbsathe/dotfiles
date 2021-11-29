@@ -39,7 +39,7 @@ mod = "mod4"
 my_term = "alacritty"
 my_browsers = ["firefox", "google-chrome-stable -incognito"]
 # Could send a notification with `notify-send`
-screenshot_cmd = 'scrot -q 100 /home/ashutosh/Pictures/screenshots/%Y-%m-%d_%H:%M:%S.jpg'
+screenshot_cmd = 'scrot -q 100 /home/ashutosh/Pictures/screenshots/%Y-%m-%d_%H:%M:%S.png'
 
 keys = [
     # Switch between windows
