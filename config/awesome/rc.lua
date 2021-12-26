@@ -52,6 +52,9 @@ terminal = "alacritty"
 editor = os.getenv("EDITOR") or "nvim"
 editor_cmd = terminal .. " -e " .. editor
 
+mybrowsers = {"firefox", "google-chrome-stable -incognito"}
+screenshot_cmd = "scrot -q 100 /home/ashutosh/Pictures/screenshots/%Y-%m-%d_%H%M%S.png"
+
 -- Default modkey.
 -- Usually, Mod4 is the key with a logo between Control and Alt.
 -- If you do not like this or do not have such a key,
@@ -250,7 +253,7 @@ globalkeys = gears.table.join(
         end,
         {description = "focus previous by index", group = "client"}
     ),
-    awful.key({ modkey,           }, "w", function () mymainmenu:show() end,
+    awful.key({ modkey, "Control" }, "m", function () mymainmenu:show() end,
               {description = "show main menu", group = "awesome"}),
 
     -- Layout manipulation
@@ -276,6 +279,10 @@ globalkeys = gears.table.join(
     -- Standard program
     awful.key({ modkey, "Shift"   }, "t", function () awful.spawn(terminal) end,
               {description = "open a terminal", group = "launcher"}),
+    awful.key({ modkey,           }, "w", function () awful.spawn(mybrowsers[1]) end,
+              {description = "open a browser", group="launcher"}),
+    awful.key({ modkey, "Shift"   }, "w", function () awful.spawn(mybrowsers[2]) end,
+              {description = "open an incognito browser", group="launcher"}),
     awful.key({ modkey, "Control" }, "r", awesome.restart,
               {description = "reload awesome", group = "awesome"}),
     awful.key({ modkey, "Shift"   }, "q", awesome.quit,
@@ -370,7 +377,9 @@ clientkeys = gears.table.join(
             c.maximized_horizontal = not c.maximized_horizontal
             c:raise()
         end ,
-        {description = "(un)maximize horizontally", group = "client"})
+        {description = "(un)maximize horizontally", group = "client"}),
+    awful.key({ modkey, "Shift"   }, "y", awful.placement.centered, 
+        {description = "center a floating window", group = "client"})
 )
 
 -- Bind all key numbers to tags.
