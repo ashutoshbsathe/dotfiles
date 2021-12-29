@@ -33,3 +33,6 @@ colors:
 # Get `xcwd` from https://github.com/schischi/xcwd
 key_bindings:
   - {key: Return, mods: Control|Shift, command:{program: "bash", args:["-c", "~/.config/alacritty/samedirterm.sh"]}}
+
+# Background opacity 
+background_opacity: 0.85
