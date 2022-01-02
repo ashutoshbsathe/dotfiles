@@ -39,7 +39,9 @@ mod = "mod4"
 my_term = "alacritty"
 my_browsers = ["firefox", "google-chrome-stable -incognito"]
 # Could send a notification with `notify-send`
-screenshot_cmd = 'scrot -q 100 /home/ashutosh/Pictures/screenshots/%Y-%m-%d_%H%M%S.png'
+screenshot_cmd = "scrot -q 100 /home/ashutosh/Pictures/screenshots/%Y-%m-%d_%H%M%S.png"
+volume_up = "pactl set-sink-volume @DEFAULT_SINK@ +5%"
+volume_dn = "pactl set-sink-volume @DEFAULT_SINK@ -5%"
 
 keys = [
     # Switch between windows
@@ -97,10 +99,16 @@ keys = [
     Key([mod, "control"], "q", lazy.shutdown(), desc="Shutdown Qtile"),
     Key([mod, "shift"], "r", lazy.spawncmd(),
         desc="Spawn a command using a prompt widget"),
+
+    # My commands
     Key([mod], "r", lazy.spawn("dmenu_run -p 'dmenu >'"), desc="Run launcher"),
     Key([mod], "w", lazy.spawn(my_browsers[0]), desc="Normal browser"),
     Key([mod, "shift"], "w", lazy.spawn(my_browsers[1]), desc="Incognito browser"),
-    Key([mod, "shift"], "p", lazy.spawn(screenshot_cmd), desc='Take a screenshot'),
+    Key([mod], "Print", lazy.spawn(screenshot_cmd), desc="Take a screenshot"),
+    
+    # Audio - `pactl`
+    Key([mod], "F1", lazy.spawn(volume_up), desc="Increase volume"),
+    Key([mod], "F2", lazy.spawn(volume_dn), desc="Increase volume"),
 
 ]
 
