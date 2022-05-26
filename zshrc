@@ -99,7 +99,7 @@ source $ZSH/oh-my-zsh.sh
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 clear
 alias neofetch="neofetch --source /home/ashutosh/aperture.txt"
-neofetch
+#neofetch
 alias vi="nvim"
 export EDITOR="nvim"
 alias nclear="clear; neofetch;"
@@ -129,3 +129,4 @@ export PATH="/home/ashutosh/personalization/cmus/bin/:$PATH"
 export PATH="$PATH:/opt/cuda/bin/" # need to add at the END of path so that GCC runs properly
 
 export LC_CTYPE="en_IN.UTF-8"
+export LC_ALL="en_IN.UTF-8"
