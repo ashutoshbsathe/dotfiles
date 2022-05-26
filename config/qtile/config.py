@@ -181,23 +181,41 @@ screens = [
                     text=powerline_left_sep,
                     font=powerline_font,
                     fontsize=powerline_fontsize,
-                    foreground=my_green,
+                    foreground=my_blue,
                     padding=powerline_padding
                 ),
                 widget.Image(
                     filename='~/.config/qtile/icons/arrow-up.png',
                     margin=5,
                     padding=0,
-                    background=my_green,
+                    background=my_blue,
                 ),
-                widget.Net(format='{up}', background=my_green),
+                widget.Net(format='{up}', background=my_blue),
                 widget.Image(
                     filename='~/.config/qtile/icons/arrow-down.png',
                     margin=5,
                     padding=0,
+                    background=my_blue,
+                ),
+                widget.Net(format='{down}  ', background=my_blue),
+                widget.TextBox(
+                    text=powerline_left_sep,
+                    font=powerline_font,
+                    fontsize=powerline_fontsize,
+                    foreground=my_green,
+                    background=my_blue,
+                    padding=powerline_padding
+                ),
+                widget.Image(
+                    filename='~/.config/qtile/icons/battery.png',
+                    margin=5,
+                    padding=0,
                     background=my_green,
                 ),
-                widget.Net(format='{down}  ', background=my_green),
+                widget.Battery(
+                    background=my_green,
+                    format='{char} {percent:2.0%} {hour:d}h {min:02d}m',
+                ),
                 widget.TextBox(
                     text=powerline_left_sep,
                     font=powerline_font,
@@ -239,7 +257,7 @@ screens = [
                     margin=3,
                     background=my_blue,
                 ),
-                widget.NvidiaSensors(format='{temp}°C/{fan_speed}RPM/{perf}  ', background=my_blue),
+                widget.NvidiaSensors(format='{temp}°C/{perf}  ', background=my_blue),
                 widget.TextBox(
                     text=powerline_left_sep,
                     font=powerline_font,
