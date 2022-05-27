@@ -101,7 +101,7 @@ keys = [
         desc="Spawn a command using a prompt widget"),
 
     # My commands
-    Key([mod], "r", lazy.spawn("dmenu_run -p 'dmenu >'"), desc="Run launcher"),
+    Key([mod], "r", lazy.spawn("dmenu_run -fn 'FiraCode Sans Mono:size=14' -p 'dmenu >'"), desc="Run launcher"),
     Key([mod], "w", lazy.spawn(my_browsers[0]), desc="Normal browser"),
     Key([mod, "shift"], "w", lazy.spawn(my_browsers[1]), desc="Incognito browser"),
     Key([mod], "Print", lazy.spawn(screenshot_cmd), desc="Take a screenshot"),
