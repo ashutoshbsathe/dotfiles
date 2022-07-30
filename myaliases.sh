@@ -8,3 +8,6 @@ cmdline() {
 powner() {
     ps -o user= -p $1
 }
+
+# NVIDIA
+alias nvinfnoheader="nvidia-smi --query-gpu=fan.speed,temperature.gpu,pstate --format=csv,noheader"
