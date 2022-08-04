@@ -70,7 +70,7 @@
 # System Controls
 
 1. `pamix-git` from AUR to configure the pulseaudio properly
-2. `nmtui` - terminal interface for network manager or `nmcli`  for other stuff
+2. `nmtui` - terminal interface for network manager or `nmcli`  for other stuff. `nmtui` is pretty much a must for working with window managers. TODO: Can we configure themes etc for `nmtui` ?
 3. Install `dunst` and `notification-daemon` and then create the service file for `org.freedesktop.Notifications` using notification-daemon
 4. Then you can use any systray with notifications in my build of dwm
 
