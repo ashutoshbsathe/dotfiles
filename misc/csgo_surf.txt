@@ -30,3 +30,6 @@ mp_roundtime 99999;
 mp_startmoney 99999;
 mp_buytime 99999;
 mp_restartgame 1;
+
+// https://www.youtube.com/watch?v=uSnAKijI_0Q
+sv_cheats 1; bot_kick; sv_accelerate 10; sv_airaccelerate 1000; sv_staminajumpcost 0; sv_staminalandcost 0; sv_staminamax 0; sv_autobunnyhopping 1; sv_enablebunnyhopping 1; mp_warmup_end; mp_restartgame 1
