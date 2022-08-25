@@ -82,3 +82,8 @@
 
 * DPMS settings for arch might be in `/usr/share/X11/xorg.conf.d`
 * `sleep 1; xset -dpms` to disable DPMS and prevent screen blanking. Install `xorg-xset` if command not found
+
+# Other softwares
+* `pandoc`
+* `neovim`
+* `google-chrome-stable` (AUR)
