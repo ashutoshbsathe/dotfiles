@@ -21,7 +21,7 @@
 12. Localization - Edit `/etc/locale.gen` and delete `#` from the beginning of `en_US.UTF-8 UTF-8` and save it. Then do `locale-gen` After this edit `/etc/locale.conf` and add `LANG=en_US.UTF-8`
 13. Timezone - `ls /usr/share/zoneinfo` to list all zones and then `ln -s /usr/share/zoneinfo/Asia/Kolkata /etc/localtime` to select your zone. Now sync the clock properly `hwclock --systohc --utc`
 14. Set the root password - type `passwd`
-15. Set the hostname - Edit `/etc/hostname` Also do `systemctl enable dhcpcd` so that it will be started at boot time to get IP. `systemctl enable NetworkManager` if dhcpcd is not found
+15. Set the hostname - Edit `/etc/hostname` Also do `systemctl enable dhcpcd` so that it will be started at boot time to get IP. `systemctl enable NetworkManager` if dhcpcd is not found also install `dhcpcd`
 16. Install rEFInd - `sudo pacman -S refind efibootmgr networkmanager wpa_supplicant dialog mtools dosfstools linux-headers openssh`
     1. Do `refind-install --usedefault /dev/sda1 --alldrivers`
     2. `mkrlconf`
