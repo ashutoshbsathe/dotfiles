@@ -87,3 +87,9 @@
 * `pandoc`
 * `neovim`
 * `google-chrome-stable` (AUR)
+
+# Bluetooth
+* Install `bluez` and `bluez-utils`
+* Also make sure `btusb` kernel module is loaded by doing `lsmod | grep btusb`
+* Finally enable `bluetooth.service`
+* Install `blueman` package and access the applet using `blueman-applet` or `blueman-manager`
