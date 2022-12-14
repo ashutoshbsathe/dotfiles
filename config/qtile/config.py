@@ -40,6 +40,7 @@ my_term = "alacritty"
 my_browsers = ["firefox", "google-chrome-stable -incognito"]
 # Could send a notification with `notify-send`
 screenshot_cmd = "scrot -q 100 /home/ashutosh/Pictures/screenshots/%Y-%m-%d_%H%M%S.png"
+logseq_command = "/home/ashutosh/HDD/IITB/productivity/Logseq-linux-x64/Logseq"
 volume_up = "pactl set-sink-volume @DEFAULT_SINK@ +5%"
 volume_dn = "pactl set-sink-volume @DEFAULT_SINK@ -5%"
 
@@ -105,6 +106,7 @@ keys = [
     Key([mod], "w", lazy.spawn(my_browsers[0]), desc="Normal browser"),
     Key([mod, "shift"], "w", lazy.spawn(my_browsers[1]), desc="Incognito browser"),
     Key([mod], "Print", lazy.spawn(screenshot_cmd), desc="Take a screenshot"),
+    Key([mod], "b", lazy.spawn(logseq_command), desc="Open brain (logseq)"),
     
     # Audio - `pactl`
     Key([mod], "F1", lazy.spawn(volume_up), desc="Increase volume"),
