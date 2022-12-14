@@ -177,8 +177,8 @@ screens = [
                     background=my_blue,
                 ),
                 widget.Prompt(),
-                widget.WindowName(),
-                widget.Spacer(),
+                widget.TaskList(),
+                #widget.Spacer(),
                 widget.TextBox(
                     text=powerline_left_sep,
                     font=powerline_font,
