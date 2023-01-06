@@ -40,6 +40,7 @@ my_term = "alacritty"
 my_browsers = ["firefox", "google-chrome-stable -incognito"]
 # Could send a notification with `notify-send`
 screenshot_cmd = "scrot -q 100 /home/ashutosh/Pictures/screenshots/%Y-%m-%d_%H%M%S.png"
+logseq_command = "logseq"
 volume_up = "pactl set-sink-volume @DEFAULT_SINK@ +5%"
 volume_dn = "pactl set-sink-volume @DEFAULT_SINK@ -5%"
 
@@ -101,10 +102,11 @@ keys = [
         desc="Spawn a command using a prompt widget"),
 
     # My commands
-    Key([mod], "r", lazy.spawn("dmenu_run -fn 'FiraCode Sans Mono:size=14' -p 'dmenu >'"), desc="Run launcher"),
+    Key([mod], "r", lazy.spawn("dmenu_run -p 'dmenu >'"), desc="Run launcher"),
     Key([mod], "w", lazy.spawn(my_browsers[0]), desc="Normal browser"),
     Key([mod, "shift"], "w", lazy.spawn(my_browsers[1]), desc="Incognito browser"),
     Key([mod], "Print", lazy.spawn(screenshot_cmd), desc="Take a screenshot"),
+    Key([mod], "b", lazy.spawn(logseq_command), desc="Open brain (logseq)"),
     
     # Audio - `pactl`
     Key([mod], "F1", lazy.spawn(volume_up), desc="Increase volume"),
@@ -175,47 +177,29 @@ screens = [
                     background=my_blue,
                 ),
                 widget.Prompt(),
-                widget.WindowName(),
-                widget.Spacer(),
+                widget.TaskList(),
+                #widget.Spacer(),
                 widget.TextBox(
                     text=powerline_left_sep,
                     font=powerline_font,
                     fontsize=powerline_fontsize,
-                    foreground=my_blue,
+                    foreground=my_green,
                     padding=powerline_padding
                 ),
                 widget.Image(
                     filename='~/.config/qtile/icons/arrow-up.png',
                     margin=5,
                     padding=0,
-                    background=my_blue,
+                    background=my_green,
                 ),
-                widget.Net(format='{up}', background=my_blue),
+                widget.Net(format='{up}', background=my_green),
                 widget.Image(
                     filename='~/.config/qtile/icons/arrow-down.png',
                     margin=5,
                     padding=0,
-                    background=my_blue,
-                ),
-                widget.Net(format='{down}  ', background=my_blue),
-                widget.TextBox(
-                    text=powerline_left_sep,
-                    font=powerline_font,
-                    fontsize=powerline_fontsize,
-                    foreground=my_green,
-                    background=my_blue,
-                    padding=powerline_padding
-                ),
-                widget.Image(
-                    filename='~/.config/qtile/icons/battery.png',
-                    margin=5,
-                    padding=0,
                     background=my_green,
                 ),
-                widget.Battery(
-                    background=my_green,
-                    format='{char} {percent:2.0%} {hour:d}h {min:02d}m',
-                ),
+                widget.Net(format='{down}  ', background=my_green),
                 widget.TextBox(
                     text=powerline_left_sep,
                     font=powerline_font,
@@ -267,11 +251,29 @@ screens = [
                     padding=powerline_padding
                 ),
                 widget.Image(
+                    filename='~/.config/qtile/icons/battery.png',
+                    margin=5,
+                    padding=0,
+                    background=my_green,
+                ),
+                widget.Battery(
+                    background=my_green,
+                    format='{char} {percent:2.0%} {hour:d}h {min:02d}m',
+                ),
+                widget.TextBox(
+                    text=powerline_left_sep,
+                    font=powerline_font,
+                    fontsize=powerline_fontsize,
+                    foreground=my_blue,
+                    background=my_green,
+                    padding=powerline_padding
+                ),
+                widget.Image(
                     filename='~/.config/qtile/icons/calendar.png',
                     margin=5,
-                    background=my_green
+                    background=my_blue
                 ),
-                widget.Clock(format='%Y %b %d %a %I:%M %p  ', background=my_green),
+                widget.Clock(format='%Y %b %d %a %I:%M %p  ', background=my_blue),
                 widget.TextBox(
                     text=powerline_left_sep,
                     font=powerline_font,
