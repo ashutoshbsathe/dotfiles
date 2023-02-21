@@ -82,3 +82,6 @@
 
 * DPMS settings for arch might be in `/usr/share/X11/xorg.conf.d`
 * `sleep 1; xset -dpms` to disable DPMS and prevent screen blanking. Install `xorg-xset` if command not found
+
+# Keyring errors
+* https://github.com/archlinux/archinstall/issues/1511
