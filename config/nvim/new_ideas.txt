@@ -1,0 +1,31 @@
+Starting a fresh neovim config
+
+1. Boilerplate -- https://github.com/tokiory/neovim-boilerplate
+2. packer.nvim -- https://github.com/wbthomason/packer.nvim or vim-plug -- https://github.com/junegunn/vim-plug
+3. coq_nvim -- https://github.com/ms-jpq/coq_nvim
+4. telescope.nvim -- https://github.com/nvim-telescope/telescope.nvim
+5. chadtree -- https://github.com/ms-jpq/chadtree
+6. nvim-colorize.lua -- https://github.com/NvChad/nvim-colorizer.lua
+7. Shade.nvim -- https://github.com/sunjon/Shade.nvim
+8. onedark.nvim -- https://github.com/navarasu/onedark.nvim
+9. nvim-treesitter -- https://github.com/nvim-treesitter/nvim-treesitter
+10. gitsigns.nvim -- https://github.com/lewis6991/gitsigns.nvim
+11. lualine.nvim -- https://github.com/nvim-lualine/lualine.nvim
+12. bufferline.nvim -- https://github.com/akinsho/bufferline.nvim
+13. nvim-web-icons -- https://github.com/nvim-tree/nvim-web-devicons
+14. toggleterm.nvim -- https://github.com/akinsho/toggleterm.nvim
+15. neoformat -- https://github.com/sbdchd/neoformat
+16. edgy.nvim -- https://github.com/folke/edgy.nvim
+17. which-key.nvim -- https://github.com/folke/which-key.nvim
+
+Optional:
+1. nabla.nvim -- https://github.com/jbyuki/nabla.nvim
+2. neorg -- https://github.com/nvim-neorg/neorg
+2. venn.nvim -- https://github.com/jbyuki/venn.nvim
+4. AbbrevMan.nvim -- https://github.com/Pocco81/abbrev-man.nvim
+5. hop.nvim -- https://github.com/phaazon/hop.nvim
+6. vim-be-good -- https://github.com/ThePrimeagen/vim-be-good
+7. hardtime.nvim -- https://github.com/m4xshen/hardtime.nvim
+8. bad-practices.nvim -- https://github.com/antonk52/bad-practices.nvim
+
+Lastly https://github.com/nvimdev/dashboard-nvim
