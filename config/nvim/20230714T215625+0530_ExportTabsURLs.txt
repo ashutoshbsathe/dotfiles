@@ -1,0 +1,78 @@
+I Bought 10 Off-Brand GPUs… How Bad Are They?? - YouTube
+https://www.youtube.com/watch?v=FdbvrqC6lOY
+
+Dr. Vasantrao Deshpande sings a bandish in Raag Maru-Bihag - YouTube
+https://www.youtube.com/watch?v=BhMaIdnBrYE
+
+raag durga pandit jasraj - YouTube
+https://www.youtube.com/results?search_query=raag+durga+pandit+jasraj
+
+Pt Jasraj - Raag Darbari, early 1980s - YouTube
+https://www.youtube.com/watch?v=2ZUWKnM5Wsg
+
+CSRankings: Computer Science Rankings
+https://csrankings.org/#/fromyear/2018/toyear/2023/index?mlmining&nlp&chi&robotics&us
+
+init.vim to init.lua? any advantages : neovim
+https://www.reddit.com/r/neovim/comments/jfs5sb/initvim_to_initlua_any_advantages/
+
+rockerBOO/awesome-neovim: Collections of awesome neovim plugins.
+https://github.com/rockerBOO/awesome-neovim
+
+tokiory/neovim-boilerplate: Modern Neovim Boilerplate ✨
+https://github.com/tokiory/neovim-boilerplate
+
+folke/lazy.nvim: 💤 A modern plugin manager for Neovim
+https://github.com/folke/lazy.nvim
+
+folke/lazy.nvim: 💤 A modern plugin manager for Neovim
+https://github.com/folke/lazy.nvim#%EF%B8%8F-configuration
+
+folke/neoconf.nvim: 💼 Neovim plugin to manage global and project-local settings
+https://github.com/folke/neoconf.nvim
+
+LunarVim/Neovim-from-scratch: 📚 A Neovim config designed from scratch to be understandable
+https://github.com/LunarVim/Neovim-from-scratch
+
+Lazy vs Packer : neovim
+https://www.reddit.com/r/neovim/comments/11d1wjm/lazy_vs_packer/
+
+nvim-lua/kickstart.nvim: A launch point for your personal nvim configuration
+http://neovimcraft.com/plugin/nvim-lua/kickstart.nvim/index.html
+
+kickstart.nvim/init.lua at master · nvim-lua/kickstart.nvim · GitHub
+https://github.com/nvim-lua/kickstart.nvim/blob/master/init.lua
+
+⌨️ Keymaps | LazyVim
+https://www.lazyvim.org/keymaps#nvim-dap-python
+
+edgy.nvim | LazyVim
+https://www.lazyvim.org/plugins/extras/ui.edgy
+
+folke/lazy.nvim: 💤 A modern plugin manager for Neovim
+https://github.com/folke/lazy.nvim
+
+Folke Lemaitre
+http://folke.io/
+
+neovim/nvim-lspconfig: Quickstart configs for Nvim LSP
+http://neovimcraft.com/plugin/neovim/nvim-lspconfig/index.html
+
+ms-jpq/coq_nvim: Fast as FUCK nvim completion. SQLite, concurrent scheduler, hundreds of hours of optimization.
+https://github.com/ms-jpq/coq_nvim
+
+neovim/nvim-lspconfig: Quickstart configs for Nvim LSP
+https://github.com/neovim/nvim-lspconfig
+
+Installing Pyright
+https://microsoft.github.io/pyright/#/installation
+
+Tiling window manager users: do you offload window splitting, file manager, and other features to the tiling manager or do you continue using them in neovim? : neovim
+https://www.reddit.com/r/neovim/comments/ofth8z/tiling_window_manager_users_do_you_offload_window/
+
+folke/edgy.nvim: Easily create and manage predefined window layouts, bringing a new edge to your workflow
+https://github.com/folke/edgy.nvim
+
+Editors (Vim) · Missing Semester
+https://missing.csail.mit.edu/2020/editors/
+
