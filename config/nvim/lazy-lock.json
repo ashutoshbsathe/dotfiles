@@ -1,0 +1,8 @@
+{
+  "coq.artifacts": { "branch": "artifacts", "commit": "e6a2ec767a98a21ebe9b247d80e462544e3f9397" },
+  "coq_nvim": { "branch": "coq", "commit": "62242fcb126319496c90003a78fb75066789a8ca" },
+  "lazy.nvim": { "branch": "main", "commit": "14d76aac4bd3ff07c1fca074c210f28f766a931e" },
+  "mason.nvim": { "branch": "main", "commit": "5ad3e113b0c3fde3caba8630599373046f6197e8" },
+  "nvim-lspconfig": { "branch": "master", "commit": "4b26897a80c41eb2f116b271cbdcd4686fb52dd6" },
+  "which-key.nvim": { "branch": "main", "commit": "96e99913df649d45333a9ad625ad4c72d5e65fe1" }
+}
