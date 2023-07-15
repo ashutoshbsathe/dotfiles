@@ -71,6 +71,19 @@ require('lazy').setup({
             }
         }
     },
+    'lewis6991/gitsigns.nvim',
+    {
+        'nvim-lualine/lualine.nvim',
+        requires = {
+            'nvim-tree/nvim-web-devicons', 
+            opt = true,
+        }
+    },
+    {
+        'akinsho/bufferline.nvim',
+        version = '*',
+        dependencies = { 'nvim-tree/nvim-web-devicons' },
+    },
     'folke/which-key.nvim',
 })
 
@@ -144,3 +157,14 @@ require('nvim-treesitter.configs').setup({
         additional_vim_regex_highlighting = false,
     }
 })
+
+-- gitsigns
+require('gitsigns').setup()
+
+-- lualine
+require('lualine').setup({options = { theme = 'palenight' }})
+
+-- bufferline
+-- TODO: needs more careful configuration
+vim.opt.termguicolors = true
+require("bufferline").setup()
