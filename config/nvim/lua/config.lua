@@ -103,7 +103,9 @@ lsp.clangd.setup(coq.lsp_ensure_capabilities({}))
 lsp.ltex.setup(coq.lsp_ensure_capabilities({}))
 lsp.awk_ls.setup(coq.lsp_ensure_capabilities({}))
 lsp.bashls.setup(coq.lsp_ensure_capabilities({}))
-
+vim.g.coq_settings = {
+    auto_start = 'shut-up'
+}
 -- NERDTree
 vim.keymap.set('n', '<leader>n', ':NERDTreeFocus<CR>')
 vim.keymap.set('n', '<C-n>', ':NERDTree<CR>')
