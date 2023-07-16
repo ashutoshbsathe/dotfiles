@@ -84,6 +84,11 @@ require('lazy').setup({
         version = '*',
         dependencies = { 'nvim-tree/nvim-web-devicons' },
     },
+    {
+        'akinsho/toggleterm.nvim',
+        version = '*',
+        config = true,
+    },
     'folke/which-key.nvim',
 })
 
@@ -182,3 +187,8 @@ require("bufferline").setup({
 })
 vim.keymap.set('n', '<C-h>', ':bprev<CR>')
 vim.keymap.set('n', '<C-l>', ':bnext<CR>')
+
+-- Toggleterm
+require('toggleterm').setup()
+vim.keymap.set('t', '<Esc>', '<C-\\><C-N>')
+vim.keymap.set('n', '<leader>tt', ':ToggleTerm direction=float<CR>')
