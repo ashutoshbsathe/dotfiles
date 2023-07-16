@@ -16,3 +16,5 @@ set foldmethod=indent
 " https://www.reddit.com/r/neovim/comments/jfs5sb/comment/g9mgy3p/?utm_source=share&utm_medium=web2x&context=3
 
 lua require('config')
+
+" end of config

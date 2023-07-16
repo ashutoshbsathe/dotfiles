@@ -121,8 +121,8 @@ require('shade').setup({
     overlay_opacity = 50,
     opacity_step = 1,
     keys = {
-        brightness_up = '<C-Up>',
-        brightness_down = '<C-Down>',
+        brightness_up = '<C-j>',
+        brightness_down = '<C-k>',
         toggle = '<leader>s',
     }
 })
@@ -167,4 +167,18 @@ require('lualine').setup({options = { theme = 'palenight' }})
 -- bufferline
 -- TODO: needs more careful configuration
 vim.opt.termguicolors = true
-require("bufferline").setup()
+require("bufferline").setup({
+    options = {
+        offsets = {
+            {
+                filetype = 'nerdtree', -- this is literally the name of the window that nerdtree opens in
+                text = 'File Explorer',
+                highlight = 'Directory',
+                text_align = 'center',
+                separator = true,
+            }
+        }
+    }
+})
+vim.keymap.set('n', '<C-h>', ':bprev<CR>')
+vim.keymap.set('n', '<C-l>', ':bnext<CR>')
