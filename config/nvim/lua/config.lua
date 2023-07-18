@@ -33,7 +33,7 @@ require('lazy').setup({
     {
         'ms-jpq/coq_nvim',
         branch = 'coq',
-        build = ':COQDeps',
+        build = ':COQdeps',
     },
     {
         'ms-jpq/coq.artifacts',
