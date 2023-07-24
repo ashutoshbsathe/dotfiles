@@ -123,16 +123,17 @@ vim.keymap.set('n', '<leader>fh', builtin.help_tags, {})
 -- TODO: Is this really correct?
 require('colorizer').setup()
 
+
 -- Shade
-require('shade').setup({
-    overlay_opacity = 50,
-    opacity_step = 1,
-    keys = {
-        brightness_up = '<C-j>',
-        brightness_down = '<C-k>',
-        toggle = '<leader>s',
-    }
-})
+--require('shade').setup({
+---    overlay_opacity = 50,
+---    opacity_step = 1,
+---    keys = {
+---        brightness_up = '<C-j>',
+---        brightness_down = '<C-k>',
+---        toggle = '<leader>s',
+---    }
+---})
 
 -- Onedark
 require('onedark').setup({
