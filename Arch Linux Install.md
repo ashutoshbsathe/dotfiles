@@ -85,3 +85,4 @@
 
 # Keyring errors
 * https://github.com/archlinux/archinstall/issues/1511
+* https://bbs.archlinux.org/viewtopic.php?pid=2090814#p2090814
