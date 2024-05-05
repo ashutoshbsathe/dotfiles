@@ -1,0 +1,12 @@
+- defaults:
+    link:
+      create: true
+      relink: true
+
+- clean: ['~', '~/.config']
+
+- link:
+    ~/.gitconfig: 
+    ~/.tmux.conf: 
+    ~/.config/nvim: config/nvim/
+    ~/.local/share/Steam/steam_dev.cfg: Steam/steam_dev.cfg

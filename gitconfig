@@ -1,0 +1,19 @@
+[user]
+	email = 2ashutoshbs@gmail.com
+	name = Ashutosh Sathe
+[credential]
+	credentialStore = --unset
+	credentialhelper = libsecret
+	helper = libsecret
+[core]
+	autocrlf = input
+[init]
+	defaultBranch = default
+[http]
+	version = HTTP/1.1
+	postBuffer = 524288000
+[filter "lfs"]
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true
