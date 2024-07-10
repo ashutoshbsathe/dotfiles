@@ -7,6 +7,7 @@
 	helper = libsecret
 [core]
 	autocrlf = input
+	editor = nvim
 [init]
 	defaultBranch = default
 [http]
