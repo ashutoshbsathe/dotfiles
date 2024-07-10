@@ -37,3 +37,5 @@ vim.opt.tabstop = 4 -- Number of spaces tabs count for
 
 vim.opt.timeoutlen = 300 -- Lower than default (1000) to quickly trigger which-key
 vim.opt.updatetime = 200 -- Save swap file and trigger CursorHold
+
+vim.opt.clipboard = ""
