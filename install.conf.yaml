@@ -12,4 +12,5 @@
     ~/.config/kitty: config/kitty/
     ~/.config/fastfetch: config/fastfetch/
     ~/.config/hypr: config/hypr/
+    ~/.config/waybar: config/waybar/
     ~/.local/share/Steam/steam_dev.cfg: Steam/steam_dev.cfg
