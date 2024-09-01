@@ -13,5 +13,5 @@
     ~/.config/fastfetch: config/fastfetch/
     ~/.config/hypr: config/hypr/
     ~/.config/waybar: config/waybar/
-    ~/.config/swaylock: config/swaylock/
+    ~/.config/hyprlock: config/hyprlock/
     ~/.local/share/Steam/steam_dev.cfg: Steam/steam_dev.cfg
