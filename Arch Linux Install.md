@@ -81,12 +81,13 @@
 # X11 Config
 
 * DPMS settings for arch might be in `/usr/share/X11/xorg.conf.d`
+* `sleep 1; xset -dpms` to disable DPMS and prevent screen blanking. Install `xorg-xset` if command not found
 
 # KDE config
 * use this for desktop back and forth effort: https://github.com/Sporif/desktop-auto-back-and-forth
-* `sleep 1; xset -dpms` to disable DPMS and prevent screen blanking. Install `xorg-xset` if command not found
 
 # Keyring errors
 * https://github.com/archlinux/archinstall/issues/1511
 * https://bbs.archlinux.org/viewtopic.php?pid=2090814#p2090814
+
 
